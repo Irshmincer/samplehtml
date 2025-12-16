@@ -63,29 +63,28 @@
 
     <!-- Salesforce Embedded Messaging Script -->
     <script type='text/javascript'>
-        function initEmbeddedMessaging() {
-            try {
-                embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+function initEmbeddedMessaging() {
+try {
+embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
-                embeddedservice_bootstrap.init(
-                    '00DNS00000dCp6q',
-                    'ESA_Web_Deployment',
-                    'https://orgfarm-1316db4918-dev-ed.develop.my.site.com/ESWESAWebDeployment1724800920657',
-                    {
-                        scrt2URL: 'https://orgfarm-1316db4918-dev-ed.develop.my.salesforce-scrt.com'
-                    }
-                );
-            } catch (err) {
-                console.error('Error loading Embedded Messaging: ', err);
-            }
-        }
-    </script>
+ 
 
-    <script 
-        type='text/javascript' 
-        src='https://orgfarm-1316db4918-dev-ed.develop.my.site.com/ESWESAWebDeployment1724800920657/assets/js/bootstrap.min.js' 
-        onload='initEmbeddedMessaging()'>
-    </script>
+embeddedservice_bootstrap.init(
+'00DgK00000GIgQz',
+'ESA_Web_Deployment',
+'https://orgfarm-ad3f0badac-dev-ed.develop.my.site.com/ESWESAWebDeployment1765865485402',
+{
+scrt2URL: 'https://orgfarm-ad3f0badac-dev-ed.develop.my.salesforce-scrt.com'
+}
+);
+} catch (err) {
+console.error('Error loading Embedded Messaging: ', err);
+}
+};
+</script>
+<script type='text/javascript' src='https://orgfarm-ad3f0badac-dev-ed.develop.my.site.com/ESWESAWebDeployment1765865485402/assets/js/bo… onload='initEmbeddedMessaging()'></script>
+
+
 
 </body>
 </html>
