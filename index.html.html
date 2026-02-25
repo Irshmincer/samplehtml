@@ -61,30 +61,45 @@
         <button class="btn btn-secondary">Secondary Button</button>
     </div>
 
-    <!-- Salesforce Embedded Messaging Script -->
     <script type='text/javascript'>
-function initEmbeddedMessaging() {
-try {
-embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+                function initEmbeddedMessaging() {
+
+                                try {
+
+                                                embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
  
 
-embeddedservice_bootstrap.init(
-'00DgK00000GIgQz',
-'ESA_Web_Deployment',
-'https://orgfarm-ad3f0badac-dev-ed.develop.my.site.com/ESWESAWebDeployment1765865485402',
-{
-scrt2URL: 'https://orgfarm-ad3f0badac-dev-ed.develop.my.salesforce-scrt.com'
-}
-);
-} catch (err) {
-console.error('Error loading Embedded Messaging: ', err);
-}
-};
+                                                embeddedservice_bootstrap.init(
+
+                                                                '00Daj00000lxKE9',
+
+                                                                'ESA_Web_Deployment',
+
+                                                                'https://epicorgfarm-ad.my.site.com/ESWESAWebDeployment1771591541312',
+
+                                                                {
+
+                                                                                scrt2URL: 'https://epicorgfarm-ad.my.salesforce-scrt.com'
+
+                                                                }
+
+                                                );
+
+                                } catch (err) {
+
+                                                console.error('Error loading Embedded Messaging: ', err);
+
+                                }
+
+                };
+
 </script>
-<script type='text/javascript' src='https://orgfarm-ad3f0badac-dev-ed.develop.my.site.com/ESWESAWebDeployment1765865485402/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'>
-    
-</script>
+
+<script type='text/javascript' src='https://epicorgfarm-ad.my.site.com/ESWESAWebDeployment1771591541312/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+
 
 </body>
 </html>
